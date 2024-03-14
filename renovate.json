@@ -1,11 +1,4 @@
 {
-	"name": "renovate",
-	"hostname": "ghc-remediate-worker-c9855b57d-sk54m",
-	"pid": 8,
-	"level": 30,
-	"logContext": "7011951cc6e94b5a9c2c2441d396fa77",
-	"repository": "DimaMend/gradle-hostrules-gh-package",
-	"config": {
 		"branchPrefix": "whitesource-remediate/",
 		"enabledManagers": [
 			"",
@@ -142,19 +135,5 @@
 					"prEditNotification"
 				]
 			}
-		],
-		"issueSettings": {
-			"issueType": "DEPENDENCY"
-		},
-		"workflowRules": {
-			"enabled": true
-		},
-		"leastVulnerablePackageSettings": {
-			"enabled": false
-		},
-		"remediations": {}
-	},
-	"msg": "Repository is in remediate-only mode",
-	"time": "2024-03-12T05:58:04.154Z",
-	"v": 0
-}
+		]
+	}
