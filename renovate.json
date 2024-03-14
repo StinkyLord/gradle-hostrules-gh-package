@@ -1,0 +1,160 @@
+{
+	"name": "renovate",
+	"hostname": "ghc-remediate-worker-c9855b57d-sk54m",
+	"pid": 8,
+	"level": 30,
+	"logContext": "7011951cc6e94b5a9c2c2441d396fa77",
+	"repository": "DimaMend/gradle-hostrules-gh-package",
+	"config": {
+		"branchPrefix": "whitesource-remediate/",
+		"enabledManagers": [
+			"",
+			"maven",
+			"gradle",
+			"npm"
+		],
+		"includeForks": true,
+		"onboarding": false,
+		"requireConfig": "optional",
+		"suppressNotifications": [
+			"missingCredentialsError"
+		],
+		"vulnerabilityAlerts": {
+			"enabled": false,
+			"ignoreUnstable": false,
+			"groupName": null,
+			"schedule": [],
+			"dependencyDashboardApproval": false,
+			"labels": [
+				"security fix"
+			],
+			"commitMessageSuffix": ""
+		},
+		"hostRules": [
+			{
+				"matchHost": "https://maven.pkg.github.com/DimaMend/gradle-hostrules",
+				"hostType": "maven",
+				"username": "DimaMend",
+				"encrypted": {
+					"token": "***********"
+				}
+			}
+		],
+		"packageRules": [
+			{
+				"matchPackagePatterns": [
+					"*"
+				],
+				"enabled": false
+			},
+			{
+				"matchDatasources": [
+					"maven"
+				],
+				"registryUrls": [
+					"https://maven.pkg.github.com/DimaMend/gradle-hostrules"
+				]
+			},
+			{
+				"matchDatasources": [
+					"maven"
+				],
+				"matchPackageNames": [
+					"org.springframework.boot:spring-boot-starter-log4j2"
+				],
+				"matchCurrentVersion": "2.6.1",
+				"allowedVersions": "[2.6.3,)",
+				"vulnerabilityAlert": true,
+				"enabled": true,
+				"ignoreUnstable": false,
+				"groupName": null,
+				"schedule": [],
+				"dependencyDashboardApproval": false,
+				"labels": [
+					"security fix"
+				],
+				"prBodyTemplate": "{{{table}}}{{{notes}}}{{{changelogs}}}{{{controls}}}",
+				"prBodyNotes": [
+					"By merging this PR, the issue #1 will be automatically resolved and closed:\n\n| Severity           | <a href='#'><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width='19' height='20'></a> CVSS Score       |CVE  |\n|---|---|---|\n| ![Critical](https://whitesource-resources.whitesourcesoftware.com/critical_vul_bb.png?) Critical | 10.0 | [CVE-2021-44228](https://www.mend.io/vulnerability-database/CVE-2021-44228) |\n| ![Critical](https://whitesource-resources.whitesourcesoftware.com/critical_vul_bb.png?) Critical | 9.0 | [CVE-2021-45046](https://www.mend.io/vulnerability-database/CVE-2021-45046) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.6 | [CVE-2021-44832](https://www.mend.io/vulnerability-database/CVE-2021-44832) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.9 | [CVE-2021-45105](https://www.mend.io/vulnerability-database/CVE-2021-45105) |\n<!--[REMEDIATE_ANALITICS]{\"libraryData\":{\"libraryName\":\"spring-boot-starter-log4j2\",\"libraryVersion\":\"2.6.1\",\"libraryFixVersion\":\"2.6.3\",\"libraryArtifactId\":\"spring-boot-starter-log4j2\",\"libraryGroupId\":\"org.springframework.boot\",\"language\":\"Java\"},\"vulnerabilityData\":[{\"severity\":\"Critical\",\"score\":\"10.0\",\"vulnerabilityId\":\"CVE-2021-44228\"},{\"severity\":\"Critical\",\"score\":\"9.0\",\"vulnerabilityId\":\"CVE-2021-45046\"},{\"severity\":\"Medium\",\"score\":\"6.6\",\"vulnerabilityId\":\"CVE-2021-44832\"},{\"severity\":\"Medium\",\"score\":\"5.9\",\"vulnerabilityId\":\"CVE-2021-45105\"}]}[/REMEDIATE_ANALITICS]-->"
+				],
+				"isVulnerabilityAlert": true,
+				"commitMessageSuffix": "",
+				"suppressNotifications": [
+					"prIgnoreNotification",
+					"prEditNotification"
+				]
+			},
+			{
+				"matchDatasources": [
+					"maven"
+				],
+				"matchPackageNames": [
+					"org.springframework.boot:spring-boot-starter-web"
+				],
+				"matchCurrentVersion": "2.6.1",
+				"allowedVersions": "[3.2.1,)",
+				"vulnerabilityAlert": true,
+				"enabled": true,
+				"ignoreUnstable": false,
+				"groupName": null,
+				"schedule": [],
+				"dependencyDashboardApproval": false,
+				"labels": [
+					"security fix"
+				],
+				"prBodyTemplate": "{{{table}}}{{{notes}}}{{{changelogs}}}{{{controls}}}",
+				"prBodyNotes": [
+					"By merging this PR, the issue #2 will be automatically resolved and closed:\n\n| Severity           | <a href='#'><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width='19' height='20'></a> CVSS Score       |CVE  |\n|---|---|---|\n| ![Critical](https://whitesource-resources.whitesourcesoftware.com/critical_vul_bb.png?) Critical | 9.8 | [CVE-2016-1000027](https://www.mend.io/vulnerability-database/CVE-2016-1000027) |\n| ![Critical](https://whitesource-resources.whitesourcesoftware.com/critical_vul_bb.png?) Critical | 9.8 | [CVE-2022-1471](https://www.mend.io/vulnerability-database/CVE-2022-1471) |\n| ![Critical](https://whitesource-resources.whitesourcesoftware.com/critical_vul_bb.png?) Critical | 9.8 | [CVE-2022-22965](https://www.mend.io/vulnerability-database/CVE-2022-22965) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2020-36518](https://www.mend.io/vulnerability-database/CVE-2020-36518) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2021-46877](https://www.mend.io/vulnerability-database/CVE-2021-46877) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2022-25857](https://www.mend.io/vulnerability-database/CVE-2022-25857) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2022-42003](https://www.mend.io/vulnerability-database/CVE-2022-42003) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2022-42004](https://www.mend.io/vulnerability-database/CVE-2022-42004) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2022-45143](https://www.mend.io/vulnerability-database/CVE-2022-45143) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-20860](https://www.mend.io/vulnerability-database/CVE-2023-20860) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-24998](https://www.mend.io/vulnerability-database/CVE-2023-24998) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-44487](https://www.mend.io/vulnerability-database/CVE-2023-44487) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-46589](https://www.mend.io/vulnerability-database/CVE-2023-46589) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-6378](https://www.mend.io/vulnerability-database/CVE-2023-6378) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-6481](https://www.mend.io/vulnerability-database/CVE-2023-6481) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.0 | [CVE-2022-23181](https://www.mend.io/vulnerability-database/CVE-2022-23181) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.6 | [CVE-2021-42550](https://www.mend.io/vulnerability-database/CVE-2021-42550) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.6 | [CVE-2021-42550](https://www.mend.io/vulnerability-database/CVE-2021-42550) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2022-22950](https://www.mend.io/vulnerability-database/CVE-2022-22950) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2022-38749](https://www.mend.io/vulnerability-database/CVE-2022-38749) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2022-38751](https://www.mend.io/vulnerability-database/CVE-2022-38751) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2022-38752](https://www.mend.io/vulnerability-database/CVE-2022-38752) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2022-41854](https://www.mend.io/vulnerability-database/CVE-2022-41854) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2023-20861](https://www.mend.io/vulnerability-database/CVE-2023-20861) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2023-20863](https://www.mend.io/vulnerability-database/CVE-2023-20863) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.1 | [CVE-2023-41080](https://www.mend.io/vulnerability-database/CVE-2023-41080) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.9 | [WS-2021-0616](https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.5 | [CVE-2022-38750](https://www.mend.io/vulnerability-database/CVE-2022-38750) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.3 | [CVE-2022-22968](https://www.mend.io/vulnerability-database/CVE-2022-22968) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.3 | [CVE-2023-42795](https://www.mend.io/vulnerability-database/CVE-2023-42795) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.3 | [CVE-2023-45648](https://www.mend.io/vulnerability-database/CVE-2023-45648) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 4.3 | [CVE-2023-28708](https://www.mend.io/vulnerability-database/CVE-2023-28708) |\n| ![Low](https://whitesource-resources.whitesourcesoftware.com/low_vul_bb.png?) Low | 3.7 | [CVE-2021-43980](https://www.mend.io/vulnerability-database/CVE-2021-43980) |\n<!--[REMEDIATE_ANALITICS]{\"libraryData\":{\"libraryName\":\"spring-boot-starter-web\",\"libraryVersion\":\"2.6.1\",\"libraryFixVersion\":\"3.2.1\",\"libraryArtifactId\":\"spring-boot-starter-web\",\"libraryGroupId\":\"org.springframework.boot\",\"language\":\"Java\"},\"vulnerabilityData\":[{\"severity\":\"Critical\",\"score\":\"9.8\",\"vulnerabilityId\":\"CVE-2016-1000027\"},{\"severity\":\"Critical\",\"score\":\"9.8\",\"vulnerabilityId\":\"CVE-2022-1471\"},{\"severity\":\"Critical\",\"score\":\"9.8\",\"vulnerabilityId\":\"CVE-2022-22965\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2020-36518\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2021-46877\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2022-25857\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2022-42003\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2022-42004\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2022-45143\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-20860\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-24998\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-44487\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-46589\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-6378\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-6481\"},{\"severity\":\"High\",\"score\":\"7.0\",\"vulnerabilityId\":\"CVE-2022-23181\"},{\"severity\":\"Medium\",\"score\":\"6.6\",\"vulnerabilityId\":\"CVE-2021-42550\"},{\"severity\":\"Medium\",\"score\":\"6.6\",\"vulnerabilityId\":\"CVE-2021-42550\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2022-22950\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2022-38749\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2022-38751\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2022-38752\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2022-41854\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2023-20861\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2023-20863\"},{\"severity\":\"Medium\",\"score\":\"6.1\",\"vulnerabilityId\":\"CVE-2023-41080\"},{\"severity\":\"Medium\",\"score\":\"5.9\",\"vulnerabilityId\":\"WS-2021-0616\"},{\"severity\":\"Medium\",\"score\":\"5.5\",\"vulnerabilityId\":\"CVE-2022-38750\"},{\"severity\":\"Medium\",\"score\":\"5.3\",\"vulnerabilityId\":\"CVE-2022-22968\"},{\"severity\":\"Medium\",\"score\":\"5.3\",\"vulnerabilityId\":\"CVE-2023-42795\"},{\"severity\":\"Medium\",\"score\":\"5.3\",\"vulnerabilityId\":\"CVE-2023-45648\"},{\"severity\":\"Medium\",\"score\":\"4.3\",\"vulnerabilityId\":\"CVE-2023-28708\"},{\"severity\":\"Low\",\"score\":\"3.7\",\"vulnerabilityId\":\"CVE-2021-43980\"}]}[/REMEDIATE_ANALITICS]-->"
+				],
+				"isVulnerabilityAlert": true,
+				"commitMessageSuffix": "",
+				"suppressNotifications": [
+					"prIgnoreNotification",
+					"prEditNotification"
+				]
+			},
+			{
+				"matchDatasources": [
+					"maven"
+				],
+				"matchPackageNames": [
+					"org.springframework.boot:spring-boot-starter-test"
+				],
+				"matchCurrentVersion": "2.6.1",
+				"allowedVersions": "[3.1.9,)",
+				"vulnerabilityAlert": true,
+				"enabled": true,
+				"ignoreUnstable": false,
+				"groupName": null,
+				"schedule": [],
+				"dependencyDashboardApproval": false,
+				"labels": [
+					"security fix"
+				],
+				"prBodyTemplate": "{{{table}}}{{{notes}}}{{{changelogs}}}{{{controls}}}",
+				"prBodyNotes": [
+					"By merging this PR, the issue #3 will be automatically resolved and closed:\n\n| Severity           | <a href='#'><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width='19' height='20'></a> CVSS Score       |CVE  |\n|---|---|---|\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-1370](https://www.mend.io/vulnerability-database/CVE-2023-1370) |\n| ![High](https://whitesource-resources.whitesourcesoftware.com/high_vul_bb.png?) High | 7.5 | [CVE-2023-20883](https://www.mend.io/vulnerability-database/CVE-2023-20883) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 6.5 | [CVE-2023-34055](https://www.mend.io/vulnerability-database/CVE-2023-34055) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.3 | [CVE-2022-22970](https://www.mend.io/vulnerability-database/CVE-2022-22970) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 5.3 | [CVE-2023-51074](https://www.mend.io/vulnerability-database/CVE-2023-51074) |\n| ![Medium](https://whitesource-resources.whitesourcesoftware.com/medium_vul_bb.png?) Medium | 4.3 | [CVE-2021-22060](https://www.mend.io/vulnerability-database/CVE-2021-22060) |\n<!--[REMEDIATE_ANALITICS]{\"libraryData\":{\"libraryName\":\"spring-boot-starter-test\",\"libraryVersion\":\"2.6.1\",\"libraryFixVersion\":\"3.1.9\",\"libraryArtifactId\":\"spring-boot-starter-test\",\"libraryGroupId\":\"org.springframework.boot\",\"language\":\"Java\"},\"vulnerabilityData\":[{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-1370\"},{\"severity\":\"High\",\"score\":\"7.5\",\"vulnerabilityId\":\"CVE-2023-20883\"},{\"severity\":\"Medium\",\"score\":\"6.5\",\"vulnerabilityId\":\"CVE-2023-34055\"},{\"severity\":\"Medium\",\"score\":\"5.3\",\"vulnerabilityId\":\"CVE-2022-22970\"},{\"severity\":\"Medium\",\"score\":\"5.3\",\"vulnerabilityId\":\"CVE-2023-51074\"},{\"severity\":\"Medium\",\"score\":\"4.3\",\"vulnerabilityId\":\"CVE-2021-22060\"}]}[/REMEDIATE_ANALITICS]-->"
+				],
+				"isVulnerabilityAlert": true,
+				"commitMessageSuffix": "",
+				"suppressNotifications": [
+					"prIgnoreNotification",
+					"prEditNotification"
+				]
+			}
+		],
+		"issueSettings": {
+			"issueType": "DEPENDENCY"
+		},
+		"workflowRules": {
+			"enabled": true
+		},
+		"leastVulnerablePackageSettings": {
+			"enabled": false
+		},
+		"remediations": {}
+	},
+	"msg": "Repository is in remediate-only mode",
+	"time": "2024-03-12T05:58:04.154Z",
+	"v": 0
+}
