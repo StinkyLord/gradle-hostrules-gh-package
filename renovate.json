@@ -1,14 +1,11 @@
 {
 		"branchPrefix": "whitesource-remediate/",
 		"enabledManagers": [
-			"",
 			"maven",
 			"gradle",
 			"npm"
 		],
 		"includeForks": true,
-		"onboarding": false,
-		"requireConfig": "optional",
 		"suppressNotifications": [
 			"missingCredentialsError"
 		],
